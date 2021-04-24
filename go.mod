@@ -1,4 +1,4 @@
-module github.com/micaiahwallace/cmdserver
+module github.com/micaiahwallace/gocmdsrv
 
 go 1.16
 

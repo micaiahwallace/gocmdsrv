@@ -1,4 +1,4 @@
-package cmdserver
+package gocmdsrv
 
 import (
 	"fmt"
@@ -23,16 +23,17 @@ type Command struct {
 	Callback CmdCallback
 }
 
-// The correct format for an inbound execute api request
+// A struct to hold the value of an execute api request
 type ExecuteApiRequest struct {
 
 	// command to execute
-	Command string `json: "command"`
+	Command string `json:"command"`
 
 	// command arguments
-	Args []string `json: "args"`
+	Args []string `json:"args"`
 }
 
+// A command server to provide command execution over a rest api
 type CmdServer struct {
 
 	// mux router

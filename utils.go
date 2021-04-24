@@ -1,4 +1,4 @@
-package cmdserver
+package gocmdsrv
 
 import (
 	"encoding/json"
